@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Google Help",
+    "description": "Мощный инструмент для анализа данных, который помогает понять, как пользователи взаимодействуют с вашим веб-сайтом или приложением. С его помощью вы можете принимать обоснованные решения для улучшения пользовательского опыта, увеличения трафика и роста конверсий.",
+    "version": "2.30.1",
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

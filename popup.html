@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            transition: all 400ms;
+        }
+
+        body {
+            width: 200px;
+            padding: 10px;
+            user-select: none;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-wrapper {
+            padding: 5px 0 10px;
+        }
+
+        h3 {
+            font-family: 'Roboto', Arial, sans-serif;
+            /* Шрифт */
+            font-size: 14px;
+            /* Размер текста для H5 */
+            font-weight: 400;
+            /* Нормальный вес */
+            color: #5F6368;
+            /* Светло-серый цвет для меньшего акцента */
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.3;
+            /* Межстрочный интервал */
+        }
+
+        /* Основной стиль кнопки */
+        .google-button {
+            background-color: #4285F4;
+            /* Синий цвет Google */
+            color: white;
+            /* Белый текст */
+            border: none;
+            /* Без границы */
+            border-radius: 4px;
+            /* Легкое скругление */
+            font-family: Arial, sans-serif;
+            /* Шрифт */
+            font-size: 14px;
+            /* Размер текста */
+            font-weight: 500;
+            /* Полужирный текст */
+            padding: 8px 24px;
+            /* Внутренние отступы */
+            text-align: center;
+            /* Центрирование текста */
+            cursor: pointer;
+            /* Указатель при наведении */
+            transition: background-color 0.3s, box-shadow 0.2s;
+            /* Анимация */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            /* Тень */
+        }
+
+        /* Эффект наведения */
+        .google-button:hover {
+            background-color: #357AE8;
+            /* Темно-синий цвет */
+        }
+
+        /* Эффект нажатия */
+        .google-button:active {
+            background-color: #2A65D1;
+            /* Еще темнее при нажатии */
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            /* Уменьшение тени */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-wrapper">
+        <img src="./icon.png" alt="" class="logo">
+    </div>
+    <h3 class="heading">Welcome to Google Help!</h3>
+    <button id="clickButton" class="google-button">Help us</button>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
